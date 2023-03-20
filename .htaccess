@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^home index.php
+RewriteRule ^privacy-policy privacy_policy.php
+RewriteRule ^terms-of-use terms_of_use.php
