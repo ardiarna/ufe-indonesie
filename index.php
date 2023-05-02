@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="generator" content="Hugo 0.101.0">
+    <meta name="referrer" content="no-referrer-when-downgrade" />
     <title>UFE Section Indonésie</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -225,6 +226,22 @@
       <div class="boxes"> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> </div>
       <div class="container-fluid">
         <div class="row">
+          <div id="g_id_onload"
+            data-client_id="297827279494-c42u3sc93huhacca5idevs50ovtukglm.apps.googleusercontent.com"
+            data-context="signin"
+            data-ux_mode="popup"
+            data-login_uri="http://localhost/ufe-indonesie/"
+            data-itp_support="true"
+            data-callback="handleTokenGoogle">
+          </div>
+          <div class="g_id_signin"
+            data-type="standard"
+            data-shape="pill"
+            data-theme="outline"
+            data-text="signin_with"
+            data-size="medium"
+            data-logo_alignment="left">
+          </div>
           <div class="offset-lg-5 col-lg-6 px-4">
             <div style="margin: 156px 0px 0px 0px;">
               <figure style="margin: 0px 0px 5px 30px;">
@@ -459,6 +476,7 @@
     
     <script src="assets/jquery/jquery-3.6.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script type="text/javascript">
       let btnToTop = $('#btnToTop');
       
@@ -473,6 +491,10 @@
           btnToTop.hide();
         }
       };
+
+      function handleTokenGoogle(a) {
+        console.log(a);
+      }
 
       window.addEventListener('DOMContentLoaded', event => {
         // Activate Bootstrap scrollspy on the main nav element
